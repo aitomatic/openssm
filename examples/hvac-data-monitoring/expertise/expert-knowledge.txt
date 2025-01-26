@@ -1,0 +1,63 @@
+HVAC SENSOR MONITORING, MAINTENANCE & OPTIMIZATION
+=================================================
+
+Temperature Sensor Rule
+-----------------------
+HEURISTIC: If the temperature deviation from setpoints exceeds ±2°C for more than 1 hour during normal operation.
+
+ACTION: Alert maintenance to verify HVAC calibration and check for issues in the heating or cooling systems that could be causing inefficiency or discomfort.
+
+Humidity Sensor Rule
+--------------------
+HEURISTIC: If indoor humidity levels fall outside the range of 30-50% for more than 2 consecutive hours.
+
+ACTION: Recommend inspection of humidifiers or dehumidifiers for proper operation and adjust settings or perform maintenance as needed to stabilize indoor air quality.
+
+Pressure Sensor Rule
+--------------------
+HEURISTIC: If the pressure in any part of the HVAC system deviates from normal operational ranges by more than 15%.
+
+ACTION: Check for leaks, blockages, or failing components such as compressors or valves and conduct necessary repairs or replacements.
+
+Air Quality Sensor Rule
+-----------------------
+HEURISTIC: If CO2 levels exceed 1000 ppm or VOCs are consistently above threshold levels set by local health standards for more than 3 hours.
+
+ACTION: Increase ventilation and inspect air purification systems for functionality; consider upgrading filtration systems if persistent high levels are detected.
+
+Flow Sensor Rule
+----------------
+HEURISTIC: If airflow rates drop below 80% of the design specifications for more than 30 minutes.
+
+ACTION: Investigate for duct blockages, filter clogging, or fan issues and rectify to restore proper air circulation.
+
+Occupancy Sensor Rule
+---------------------
+HEURISTIC: If the energy usage does not correspond appropriately with occupancy data (e.g., high energy use with low occupancy).
+
+ACTION: Adjust the HVAC control settings based on actual occupancy and check for sensor malfunctions or misconfigurations.
+
+CO/CO2 Sensor Rule
+------------------
+HEURISTIC: If CO levels exceed 9 ppm or CO2 exceeds 1500 ppm in occupied spaces.
+
+ACTION: Alert safety personnel, evacuate if necessary, and inspect HVAC systems and combustion appliances for possible leaks or inadequate ventilation.
+
+Thermal Camera Rule
+-------------------
+HEURISTIC: If thermal imaging reveals hot spots or cold spots diverging from average room temperatures by more than 5°C.
+
+ACTION: Inspect for insulation failures, window leaks, or system imbalances and address to enhance energy efficiency and comfort.
+
+Vibration Sensor Rule
+---------------------
+HEURISTIC: If vibration levels increase by more than 50% from the baseline measurement of any mechanical component.
+
+ACTION: Conduct a mechanical inspection to identify wear or damage in motors, bearings, or other moving parts, and replace or repair as necessary to prevent failure.
+
+Refrigerant Leak Detector Rule
+-------------------------------
+HEURISTIC: If any increase in refrigerant presence is detected in the ambient environment outside of the 
+containment systems.
+
+ACTION: Perform a system check for leaks, repair any detected leaks, and recharge the system to ensure optimal performance and compliance with environmental regulations.

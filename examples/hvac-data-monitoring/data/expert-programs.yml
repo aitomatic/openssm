@@ -1,0 +1,77 @@
+hvac-temperature-monitoring:
+  task: |-
+    Monitor HVAC temperature deviations and recommend inspection/maintenance actions if deviations exceed thresholds.
+
+  sub-htps:
+    - task: >-
+        What are the recorded temperature values in the recent data?
+
+    - task: |-
+        Analyze whether the temperature deviates by more than 3°C from the setpoint for over 3 consecutive hours.
+        If so, note down the time periods and the corresponding deviation values.
+
+    - task: >-
+        What are the last maintenance dates and the ages of critical system components (e.g., filters, fans, ducts)?
+
+    - task: |-
+        Adjust the sensitivity of the temperature deviation threshold:
+        - For components less than 1 year old or maintained within the last 6 months, keep the threshold at 3°C.
+        - For components over 3 years old or not maintained in over 1 year, increase the threshold to 4°C.
+
+    - task: |-
+        If deviations exceeding the adjusted thresholds are identified, report a Temperature Control Problem,
+        and recommend the following maintenance actions:
+        - Inspect and replace aging components.
+        - Verify calibration of temperature sensors.
+        - Perform a system audit for inefficiencies or leaks.
+
+
+hvac-occupancy-sensor-monitoring:
+  task: |-
+    Monitor HVAC occupancy data and energy usage patterns to recommend adjustments or inspections if discrepancies are detected.
+
+  sub-htps:
+    - task: >-
+        What are the occupancy readings and corresponding HVAC energy usage values in the recent data?
+
+    - task: |-
+        Analyze whether HVAC energy usage exceeds typical levels for low-occupancy periods by more than 20%.
+        If so, note the time periods and energy discrepancies.
+
+    - task: >-
+        Check if the HVAC system is operating according to the programmed schedules and occupancy conditions.
+
+    - task: |-
+        Identify any sensor anomalies or misconfigurations that might cause false occupancy readings.
+
+    - task: |-
+        If discrepancies between occupancy and energy usage are found, recommend the following actions:
+        - Adjust HVAC control schedules for efficiency.
+        - Inspect and recalibrate occupancy sensors.
+        - Investigate potential system leaks or inefficiencies.
+
+
+
+hvac-co-co2-sensor-monitoring:
+  task: |-
+    Monitor CO and CO2 levels in indoor air and recommend actions if levels exceed safe thresholds.
+
+  sub-htps:
+    - task: >-
+        What are the recorded CO and CO2 levels in the recent data?
+
+    - task: |-
+        Analyze whether CO levels exceed 9 ppm or CO2 levels exceed 1500 ppm for more than 3 consecutive hours.
+        If so, note the time periods and recorded values.
+
+    - task: |-
+        Cross-check with ventilation system data to ensure proper air exchange rates are maintained.
+
+    - task: |-
+        Identify whether external factors (e.g., weather conditions, nearby combustion sources) might be contributing to the elevated levels.
+
+    - task: |-
+        If unsafe CO or CO2 levels are detected, recommend the following actions:
+        - Increase ventilation rates immediately.
+        - Inspect for leaks in HVAC or combustion systems.
+        - Alert safety personnel and consider evacuation if CO levels remain elevated.
