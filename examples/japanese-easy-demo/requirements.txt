@@ -19,7 +19,7 @@ charset-normalizer==3.3.2 ; python_version >= "3.12" and python_version < "3.13"
 chromedriver-autoinstaller==0.6.4 ; python_version >= "3.12" and python_version < "3.13"
 click==8.1.7 ; python_version >= "3.12" and python_version < "3.13"
 colorama==0.4.6 ; python_version >= "3.12" and python_version < "3.13" and (platform_system == "Windows" or sys_platform == "win32")
-cryptography==42.0.5 ; python_version >= "3.12" and python_version < "3.13"
+cryptography==44.0.1 ; python_version >= "3.12" and python_version < "3.13"
 cssselect==1.2.0 ; python_version >= "3.12" and python_version < "3.13"
 dataclasses-json==0.6.4 ; python_version >= "3.12" and python_version < "3.13"
 decorator==5.1.1 ; python_version >= "3.12" and python_version < "3.13"
